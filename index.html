@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Örnek Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <label for="name">Ad Soyad:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="dob">Doğum Tarihi:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label>Cinsiyet:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Erkek</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Kadın</label>
+
+        <label for="country">Ülke:</label>
+        <select id="country" name="country" required>
+            <option value="">Ülke seçiniz</option>
+            <!-- Örnek ülkeler -->
+            <option value="TR">Türkiye</option>
+            <option value="US">Amerika Birleşik Devletleri</option>
+            <option value="DE">Almanya</option>
+            <option value="FR">Fransa</option>
+            <option value="IT">İtalya</option>
+            <option value="GB">Birleşik Krallık</option>
+            <!-- Tüm ülkeleri buraya ekleyebilirsiniz -->
+        </select>
+
+        <label for="message">Mesajınız:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Gönder</button>
+    </form>
+</body>
+</html>
